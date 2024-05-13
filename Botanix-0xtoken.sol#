@@ -63,8 +63,8 @@ contract OMCToken is ERC20Interface, SafeMath {
         name = "Oat Milk Coin";
         decimals = 2;
         _totalSupply = 10000;
-        balances[0x60746c378DaA26dd0bDbA908c4A4480A4c4dc872] = _totalSupply;
-        emit Transfer(address(0), 0x60746c378DaA26dd0bDbA908c4A4480A4c4dc872, _totalSupply);
+        balances[YOUR_METAMASK_WALLET_ADDRESS] = _totalSupply;
+        emit Transfer(address(0), YOUR_METAMASK_WALLET_ADDRESS, _totalSupply);
     }
 
     function totalSupply() public constant returns (uint) {
